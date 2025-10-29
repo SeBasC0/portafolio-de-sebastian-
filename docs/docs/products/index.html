@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AGROTEC - Vegetables</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- HEADER -->
+   <div class="logo">
+      <img src="Logo .png" alt="AGROTEC">
+    </div>
+ <nav>
+      <ul> <!-- Esta es el area del encabezado  -->
+            <li><a class="active" href="../index.html">HOME</a></li><li><a href="../about/about.html">ABOUT US</a></li> <li><a href="../products/index.html">PRODUCTS</a></li><li><a href="../sellers/sellers.html">SELLERS</a></li><li><a href="../savings/savings.html">SAVINGS</a></li>      </ul>
+    </nav>
+
+    <div class="header-icons">
+      <span>👤</span>
+      <button id="cart-btn" class="cart-btn">🛒 <span id="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="banner">
+    <h1>VEGETABLES</h1>
+    <input type="text" id="search" placeholder="Search..."/>
+  </section>
+
+  <!-- CONTENIDO -->
+  <main class="container">
+    <div class="product-header">
+      <p class="product-count">Showing 1 - 24 of 101 products</p>
+      <button id="toggle-view" class="view-btn">🔲 Grid / List</button>
+    </div>
+    <div id="product-list" class="grid"></div>
+
+    <!-- DETALLE -->
+    <div id="product-detail" class="hidden">
+      <button id="back-btn" class="back-btn">← Back</button>
+
+      <div class="detail-box">
+        <img id="detail-img" class="detail-img" alt="product"/>
+        <div class="detail-info">
+          <h2 id="detail-name"></h2>
+          <p id="detail-price" class="price"></p>
+          <p id="detail-seller" class="seller"></p>
+          <div class="detail-actions">
+            <button class="favorite-btn">❤️ Add to Favorites</button>
+            <button id="add-cart-btn" class="add-cart-btn">🛒 Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <h3>You would also like:</h3>
+      <div id="suggestions" class="carousel"></div>
+    </div>
+  </main>
+
+  <!-- PANEL DEL CARRITO -->
+  <aside id="cart-panel" class="cart-panel hidden">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="close-cart" class="close-btn">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="total">Total: <span id="cart-total">฿ 0.00</span></div>
+      <div class="cart-actions">
+        <button id="clear-cart" class="outline">Clear</button>
+        <button id="checkout" class="primary">Checkout</button>
+      </div>
+    </div>
+  </aside>
+
+    <footer>
+    <div class="footer-content-simplified">
+      <div class="footer-left">
+        <div class="footer-logo-agrotec">
+          <img src="Logo .png" alt="AGROTEC Logo Footer">
+          <h3>AGROTEC</h3>
+        </div>
+        <p class="footer-slogan-main">Harvesting quality for all</p>
+      </div>
+
+      <div class="footer-right">
+        <h3 class="footer-follow-us">follow us</h3>
+        <div class="social-icons-footer">
+          <a href="https://www.facebook.com/tupagina" target="_blank" aria-label="Facebook de AGROTEC"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/tu_usuario" target="_blank" aria-label="Instagram de AGROTEC"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.twitter.com/tu_usuario" target="_blank" aria-label="Twitter de AGROTEC"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/tuempresa" target="_blank" aria-label="LinkedIn de AGROTEC"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-simplified">
+      © 2025 AGROTEC | All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
